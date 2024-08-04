@@ -1,0 +1,106 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Set the font family for the entire page */
+    background-color: #f8f9fa; /* Light gray background color for the page */
+    color: #343a40; /* Dark gray text color for better readability */
+}
+
+/* Navbar Custom Styling */
+.navbar {
+    background-color: #007bff; /* Primary blue color for the navbar background */
+}
+
+.navbar-brand {
+    color: #ffffff !important; /* White color for the brand text */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* White color for the navbar links */
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold; /* Bold text for the active link */
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff; /* Match header background with navbar */
+    color: #ffffff; /* White text color for the header */
+    padding: 20px 0; /* Add padding around the header */
+    text-align: center; /* Center-align the text in the header */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin from the header title */
+}
+
+/* Section Styling */
+section {
+    margin: 20px 0; /* Add vertical margin to sections */
+    padding: 20px; /* Add padding inside sections */
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 5px; /* Rounded corners for sections */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow around sections */
+}
+
+/* Heading Styling */
+h2 {
+    color: #007bff; /* Primary blue color for headings */
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px; /* Margin at the top of the form */
+}
+
+fieldset {
+    border: 1px solid #ced4da; /* Light gray border for fieldsets */
+    padding: 10px; /* Padding inside fieldsets */
+    border-radius: 5px; /* Rounded corners for fieldsets */
+}
+
+legend {
+    font-weight: bold; /* Bold text for legends */
+}
+
+.form-group label {
+    font-weight: bold; /* Bold labels for form fields */
+}
+
+.form-control {
+    border: 1px solid #ced4da; /* Light gray border for form controls */
+    border-radius: 5px; /* Rounded corners for form controls */
+    padding: 10px; /* Padding inside form controls */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary blue color for buttons */
+    border: none; /* Remove border from buttons */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue for button hover effect */
+}
+
+/* Image Styling */
+#image-section img {
+    max-width: 100%; /* Make image responsive */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Audio and Video Styling */
+.demo {
+    margin: 20px 0; /* Add vertical margin around media elements */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0; /* Reduce padding on smaller screens */
+    }
+    
+    section {
+        margin: 10px 0; /* Reduce margin on smaller screens */
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+}

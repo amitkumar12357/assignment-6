@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Student - {{title}}</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar-light {
+            background: linear-gradient(to right, #f8f9fa, #e0e0e0);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .nav-link {
+            color: #555;
+        }
+
+        .nav-link:hover {
+            color: #007bff;
+        }
+
+        header h1 {
+            color: #007bff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .form-group label {
+            color: #333;
+        }
+
+        .btn-primary {
+            background: #007bff;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Amit Kumar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/htmlDemo">HTML Demo</a></li>
+                <li class="nav-item active"><a class="nav-link" href="/students/add">Add Student</a></li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
+                <li class="nav-item"><a class="nav-link" href="/tas">Teaching Assistants</a></li>
+                <li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <main class="col-md-12">
+                <header>
+                    <h1>Add New Student</h1>
+                </header>
+
+                <section id="add-student-form">
+                    <form action="/students/add" method="POST">
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter student's first name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter student's last name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter student's email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Course ID:</label>
+                            <input type="number" class="form-control" id="course" name="course" placeholder="Enter course ID" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="TA">Is TA:</label>
+                            <select class="form-control" id="TA" name="TA" required>
+                                <option value="false">No</option>
+                                <option value="true">Yes</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="status">Status:</label>
+                            <select class="form-control" id="status" name="status" required>
+                                <option value="Full-time">Full-time</option>
+                                <option value="Part-time">Part-time</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Student</button>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us - {{title}}</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar-light {
+            background: linear-gradient(to right, #f8f9fa, #e0e0e0);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .nav-link {
+            color: #555;
+        }
+
+        .nav-link:hover {
+            color: #007bff;
+        }
+
+        header h1 {
+            color: #007bff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .team-member {
+            margin-bottom: 20px;
+        }
+
+        .team-member img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+            margin-right: 15px;
+        }
+
+        .team-member h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Amit Kumar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/htmlDemo">HTML Demo</a></li>
+                <li class="nav-item"><a class="nav-link" href="/students/add">Add Student</a></li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
+                <li class="nav-item"><a class="nav-link" href="/tas">Teaching Assistants</a></li>
+                <li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <main class="col-md-12">
+                <header>
+                    <h1>About Us</h1>
+                </header>
+
+                <section id="introduction">
+                    <h2>Welcome to Our Website</h2>
+                    <p>We are dedicated to providing comprehensive information about our college, students, and courses. Our mission is to support students and educators by offering accessible and reliable data.</p>
+                </section>
+
+                <section id="mission">
+                    <h2>Our Mission</h2>
+                    <p>Our mission is to create a user-friendly platform where students can find all the information they need. We aim to facilitate an environment of learning and growth, where data accessibility empowers education.</p>
+                </section>
+
+                <section id="team">
+                    <h2>Meet Our Team</h2>
+                    <p>Our team consists of dedicated professionals passionate about education and technology. Here are some key members:</p>
+                    
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 1">
+                        <div>
+                            <h3>John Doe</h3>
+                            <p>Project Manager</p>
+                            <p>John oversees the project and ensures that everything runs smoothly and on schedule.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 2">
+                        <div>
+                            <h3>Jane Smith</h3>
+                            <p>Lead Developer</p>
+                            <p>Jane leads the development team and writes code to bring the project to life.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 3">
+                        <div>
+                            <h3>Emily Johnson</h3>
+                            <p>UI/UX Designer</p>
+                            <p>Emily designs the user interface and ensures a seamless user experience across the website.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact">
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions or would like to get in touch, please contact us:</p>
+                    <ul>
+                        <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                        <li>Phone: (123) 456-7890</li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Amit Kumar. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

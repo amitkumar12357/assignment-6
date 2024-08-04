@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Demo - {{title}}</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar-light {
+            background: linear-gradient(to right, #f8f9fa, #e0e0e0);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .nav-link {
+            color: #555;
+        }
+
+        .nav-link:hover {
+            color: #007bff;
+        }
+
+        header h1 {
+            color: #007bff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        section h2 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .demo {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .demo h3 {
+            margin-bottom: 10px;
+        }
+
+        .btn-primary {
+            background: #007bff;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Amit Kumar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item active"><a class="nav-link" href="/htmlDemo">HTML Demo</a></li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
+                <li class="nav-item"><a class="nav-link" href="/tas">Teaching Assistants</a></li>
+                <li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <main class="col-md-12">
+                <header>
+                    <h1>{{pageTitle}}</h1>
+                </header>
+
+                <!-- Introduction section -->
+                <section id="intro">
+                    <p>{{introText}}</p>
+                </section>
+
+                <!-- New semantic elements section -->
+                <section id="new-elements">
+                    <h2>New Semantic Elements</h2>
+                    <p>HTML5 introduced several new semantic elements that provide better structure and meaning to web content. These include:</p>
+                    <ul>
+                        <li><code>&lt;header&gt;</code>: Represents introductory content or a set of navigational links.</li>
+                        <li><code>&lt;nav&gt;</code>: Defines a set of navigation links.</li>
+                        <li><code>&lt;article&gt;</code>: Represents a self-contained piece of content that could be distributed independently.</li>
+                        <li><code>&lt;section&gt;</code>: Defines a section in a document.</li>
+                        <li><code>&lt;footer&gt;</code>: Represents footer content, typically containing information about the author or copyright information.</li>
+                    </ul>
+                </section>
+
+                <!-- Multimedia elements section -->
+                <section id="multimedia">
+                    <h2>Multimedia Elements</h2>
+                    <p>HTML5 makes it easy to add multimedia content to web pages. Some of the new multimedia elements include:</p>
+                    <ul>
+                        <li><code>&lt;audio&gt;</code>: Used to embed sound content.</li>
+                        <li><code>&lt;video&gt;</code>: Used to embed video content.</li>
+                        <li><code>&lt;canvas&gt;</code>: A container for graphics, which you can draw with JavaScript.</li>
+                    </ul>
+
+                    <!-- Audio example -->
+                    <div class="demo">
+                        <h3>Audio Example</h3>
+                        <audio controls>
+                            <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+
+                    <!-- Video example -->
+                    <div class="demo">
+                        <h3>Video Example</h3>
+                        <video controls>
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </section>
+
+                <!-- Forms section -->
+                <section id="forms">
+                    <h2>Enhanced Forms</h2>
+                    <p>HTML5 has brought new attributes and input types that make form validation and user input easier and more reliable:</p>
+                    <ul>
+                        <li><code>placeholder</code>: Specifies a short hint that describes the expected value of an input field.</li>
+                        <li><code>required</code>: Specifies that an input field must be filled out before submitting the form.</li>
+                        <li><code>email</code> and <code>url</code>: New input types that automatically validate the entered data.</li>
+                    </ul>
+                    
+                    <!-- Form example -->
+                    <div class="demo">
+                        <h3>Form Example</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Email address:</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="website">Website:</label>
+                                <input type="url" class="form-control" id="website" placeholder="https://example.com" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Image section -->
+                <section id="image-section">
+                    <h2>Image Example</h2>
+                    <p>Below is an example of an image embedded in the HTML:</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Snowboarder in halfpipe">
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
